@@ -10,9 +10,6 @@ import Greeter
 
 class SwiftPrinter: NSObject, GreeterPrinterProtocol {
     func printSomething(_ s: String?) {
-        print("This just in:", s)
+        print("This just in:", s as Any)
     }
-
-
-
 }
